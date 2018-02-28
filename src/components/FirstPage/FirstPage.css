@@ -1,0 +1,57 @@
+.FirstPage {
+  background-color: #18224B;
+  height: 90vh;
+  display: flex;
+  justify-content: space-around;
+  font-family: 'HelveticaNeue-CondensedBold';
+}
+.Row {
+  display: flex;
+  height: 40vh;
+  margin: auto;
+  flex-direction: row;
+}
+.Welcome {
+  font-size: 28px;
+  background-color: #6BC5F0;
+  padding: 10vh 5vw;
+  font-weight: bold;
+  flex-grow: 1;
+  font-family: 'HelveticaNeue-CondensedBold';
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+.Quizzy {
+  font-size: 46px;
+  color: white;
+  font-weight: bold;
+}
+
+.Login {
+  background-color: #efefef;
+  padding:0 2vw 0 2vw;
+  font-size: 24px;
+  font-family: 'HelveticaNeue-CondensedBold';
+}
+
+.Username {
+  font-size: 18px;
+  display: block;
+}
+
+.LoginText {
+  background-color: #efefef;
+  border: 2px solid;
+  font-size: 22px;
+}
+
+.LoginButton {
+  background-color: #efefef;
+  border: 2px solid;
+  border-radius: 8px;
+  padding:1vh 5vw 1vh 5vw;
+  margin: 6vh 0 0 2vh;
+  font-size: 18px;
+  font-family: 'HelveticaNeue-CondensedBold';
+}
