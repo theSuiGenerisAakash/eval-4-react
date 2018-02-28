@@ -1,0 +1,33 @@
+.Question {
+  display:flex;
+  flex-direction: column;
+  padding: 2vh;
+}
+
+.QuestionNo {
+  font-family: 'HelveticaNeue-CondensedBold';
+  font-weight: bold;
+  border: 1px solid;
+  padding: 1vw;
+}
+
+.QuestionName {
+  border: 1px solid;
+  padding: 1vw;
+  background-color: #6BC5F0;
+  font-weight: lighter;
+}
+
+.Options {
+  font-family: 'HelveticaNeue-CondensedBold';
+  font-weight: bold;
+  border: 1px solid;
+  padding: 4px;
+  display: flex;
+  padding: 1vh;
+  flex-direction: column;
+}
+
+.Option {
+  padding: 1vh;
+}
