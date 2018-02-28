@@ -1,0 +1,4 @@
+.ShowScore {
+  display: flex;
+  flex-direction: column;
+}

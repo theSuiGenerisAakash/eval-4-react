@@ -40,7 +40,7 @@ class QuesPage extends Component {
       body: JSON.stringify(userObj)
     }).then(res => res.json()).then((response) => {
       console.log(response.score);
-      // this.props.showScore(response.score);
+      this.props.showScore(response.score);
     });
   }
   checkAllSelected = () => {

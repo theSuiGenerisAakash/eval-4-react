@@ -3,6 +3,7 @@ import './App.css';
 import Header from './Header/Header';
 import FirstPage from './FirstPage/FirstPage';
 import QuesPage from './QuesPage/QuesPage';
+import ShowScore from './ShowScore/ShowScore';
 
 class App extends Component {
   constructor(props) {
@@ -41,11 +42,20 @@ class App extends Component {
         this.setState({
           name: `Hello ${value}`,
           answers: resJSON.choices,
+          layout: 1,
           score: resJSON.score,
         });
       }
     });
   }
+
+  showScore = (score) => {
+    this.setState({
+      score: score,
+      layout: 2,
+    });
+  }
+
   render() {
     if (this.state.layout === 0) {
       return (
@@ -58,7 +68,14 @@ class App extends Component {
       return (
         <div className="App">
           <Header name={this.state.name} />
-          <QuesPage questions={this.state.questions} name={this.state.name} />
+          <QuesPage questions={this.state.questions} name={this.state.name} showScore={this.showScore}/>
+        </div>
+      );
+    } else if (this.state.layout === 2) {
+      return (
+        <div className="App">
+          <Header name={this.state.name} />
+          <ShowScore score={this.state.score} totalScore={this.state.questions.length}/>
         </div>
       );
     }
