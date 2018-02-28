@@ -1,4 +1,30 @@
 .ShowScore {
   display: flex;
   flex-direction: column;
+  padding: 4vh 2vw;
+}
+
+.YourScore {
+  font-family: 'HelveticaNeue-CondensedBold';
+  color: orange;
+  font-size: 18px;
+}
+
+.Score {
+  font-family: 'HelveticaNeue-Light';
+  font-size: 40px;
+  display: inline;
+  padding: 1vh;
+}
+
+.TotalScore {
+  font-family: 'HelveticaNeue-CondensedBold';
+  font-size: 22px;
+  display: inline;
+}
+
+.Leaderboard {
+  font-family: 'HelveticaNeue-CondensedBold';
+  font-size: 22px;
+  text-align: center;
 }

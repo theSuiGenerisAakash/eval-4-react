@@ -15,6 +15,7 @@ class ShowScore extends Component {
       });
         return topScorers;
     });
+    return topScorers;
   }
   render() {
     return (
@@ -23,6 +24,7 @@ class ShowScore extends Component {
         <div className="Score">{this.props.score}
           <div className="TotalScore">/{this.props.totalScore}</div>
         </div>
+        <br/><br/>
         <div className="Leaderboard">Leaderboard</div>
         {this.populateTopScorers()}
       </div>
