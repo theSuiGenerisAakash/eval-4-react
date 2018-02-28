@@ -58,7 +58,7 @@ class App extends Component {
       return (
         <div className="App">
           <Header name={this.state.name} />
-          <QuesPage questions={this.state.questions} />
+          <QuesPage questions={this.state.questions} name={this.state.name} />
         </div>
       );
     }
