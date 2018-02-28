@@ -32,6 +32,8 @@ class App extends Component {
     });
   }
   login = (value) => {
+    if(value==='')
+      return;
     fetch(`/user/${value}`).then(res => res.json()).then(resJSON => {
       if(resJSON.statusCode === 204) {
         this.setState({
@@ -56,6 +58,15 @@ class App extends Component {
     });
   }
 
+  goBack = () => {
+    this.setState({
+      score: 0,
+      name: '',
+      answers: '',
+      layout: 0,
+    });
+  }
+
   render() {
     if (this.state.layout === 0) {
       return (
@@ -75,7 +86,7 @@ class App extends Component {
       return (
         <div className="App">
           <Header name={this.state.name} />
-          <ShowScore score={this.state.score} totalScore={this.state.questions.length}/>
+          <ShowScore score={this.state.score} totalScore={this.state.questions.length} goBack={this.goBack}/>
         </div>
       );
     }

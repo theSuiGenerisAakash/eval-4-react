@@ -28,3 +28,14 @@
   font-size: 22px;
   text-align: center;
 }
+
+.PlayAgain {
+  border: 2px solid;
+  border-radius: 12px;
+  width: 20vw;
+  align-self: center;
+  padding:1vh 3vw 1vh 3vw;
+  margin: 2vh 0 2vh 0;
+  font-size: 18px;
+  font-family: 'HelveticaNeue-CondensedBold';
+}

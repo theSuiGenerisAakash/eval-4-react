@@ -26,8 +26,10 @@ class ShowScore extends Component {
         </div>
         <br/><br/>
         <div className="Leaderboard">Leaderboard</div>
-        {this.populateTopScorers()}
+        <div>{this.populateTopScorers()}</div>
+        <button className="PlayAgain" onClick={this.props.goBack}>Play Again</button>
       </div>
+
     );
   }
 }
