@@ -1,3 +1,15 @@
 .QuesPage {
   padding: 2vw;
+  display: flex;
+  flex-direction: column;
+}
+
+.Submit {
+  border: 2px solid;
+  border-radius: 12px;
+  width: 20vw;
+  align-self: center;
+  padding:1vh 3vw 1vh 3vw;
+  font-size: 18px;
+  font-family: 'HelveticaNeue-CondensedBold';
 }

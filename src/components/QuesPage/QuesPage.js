@@ -15,6 +15,7 @@ class QuesPage extends Component {
     return (
       <div className="QuesPage">
         {this.populate(this.props.questions)}
+        <button className="Submit">Calculate</button>
       </div>
     );
   }
