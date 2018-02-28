@@ -1,0 +1,17 @@
+.Header {
+  text-align: left;
+  font-size: 36px;
+  color: white;
+  background-color: black;
+  padding: 3vh;
+  font-weight: bold;
+  font-family: 'HelveticaNeue-CondensedBold';
+  position: relative;
+}
+
+.Hello {
+  font-size: 30px;
+  position: absolute;
+  right: 10vw;
+  padding-top: 0.5vh;
+}
