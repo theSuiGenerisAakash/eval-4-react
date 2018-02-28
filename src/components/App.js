@@ -86,7 +86,7 @@ class App extends Component {
       return (
         <div className="App">
           <Header name={this.state.name} />
-          <ShowScore score={this.state.score} totalScore={this.state.questions.length} goBack={this.goBack}/>
+          <ShowScore score={this.state.score} totalScore={this.state.questions.length} name={this.state.name} goBack={this.goBack}/>
         </div>
       );
     }

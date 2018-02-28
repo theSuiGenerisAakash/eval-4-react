@@ -39,3 +39,46 @@
   font-size: 18px;
   font-family: 'HelveticaNeue-CondensedBold';
 }
+.Scorer {
+  border: 1px solid;
+  font-size: 18px;
+  padding: 1vh;
+  margin: 2vh;
+  font-family: 'HelveticaNeue-CondensedBold';
+  background-color: #6BC5F0;
+  display: inline;
+  position: relative;
+}
+
+.Scorer-Orange {
+  margin: 2vh;
+  padding: 1vh;
+  border: 1px solid;
+  background-color: orange;
+  font-size: 18px;
+  font-family: 'HelveticaNeue-CondensedBold';
+  display: inline;
+  position: relative;
+}
+
+.User {
+  font-size: 18px;
+  font-family: 'HelveticaNeue-CondensedBold';
+  color: white;
+  display: inline;
+}
+
+.Ranking {
+  font-size: 18px;
+  font-family: 'HelveticaNeue-CondensedBold';
+  display: inline;
+}
+
+.Score {
+  font-size: 18px;
+  font-family: 'HelveticaNeue-CondensedBold';
+  color: white;
+  display: inline;
+  position: absolute;
+  right: 2vw;
+}

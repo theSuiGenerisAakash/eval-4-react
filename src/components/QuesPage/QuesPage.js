@@ -16,14 +16,12 @@ class QuesPage extends Component {
     if(this.state.questionsAttempted.length === 0){
       checkArr.push(newElem);
     } else {
-      console.log(this.state.questionsAttempted.length);
     for(let i=0; i< this.state.questionsAttempted.length; i++){
       if(parseInt(this.state.questionsAttempted[i].split('+')[0]) !== id){
         checkArr.push(this.state.questionsAttempted[i]);
       }
     }
     checkArr.push(newElem);
-    console.log(checkArr);
   }
     this.setState({
       questionsAttempted: [...checkArr],
